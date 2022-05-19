@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>メニューをもったWebサイト</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* ページ全体に余白をつける */
+            #wrap {margin:40px auto;padding: 20px 40px;}
+            body {background-color: lightgray;}
+            /* リストの標準スタイルについてくるリストの点をなくし、余計な余白も除去 */
+            ul { list-style: none;margin: 0;padding: 0;}
+            /* サイドバーは25%の幅で左寄せ */
+            aside { width: 25%;float:left; background-color: antiquewhite;margin-right: 0px}
+            /* asideのリスト項目はasideの幅いっぱいにする */
+            aside li{width:100%;background-color: white;}
+            /* navのliはインライン化して右間隔を１文字ぶんあける */
+            nav li{display: inline; margin-right: 1em;background-color: lavenderblush;}
+            /* mainは70%の幅で右寄せ、内側に少し余白を */
+            main { width: 70%;float: right; background-color: bisque;padding: 10px;}
+            /* header 色つけ */
+            header {background-color: white;}
+            /* section 色つけ */
+            section {background-color: white;}
+            /* footerはセンタリングと、内側に余白 */
+            footer { text-align: center; clear:both;background-color: lavender; padding: 10px;}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>メニューをもったWebサイトの構造</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>会社概要</li>
+                    <li>製品情報</li>
+                    <li>製品別サポートページ</li>
+                    <li>お問い合わせ</li>
+                </ul>
+            </nav>
+ 
+            <main>
+                <section>
+                    <h2>弊社のWebサイト</h2>
+                    <p>企業のWebサイトなどではこのような構成になっている事がよくあります</p>
+                </section>
+                <section>
+                    <h2>新製品</h2>
+                    <p>
+                        AIを使ったおにぎり製造システムを開発しました。
+                    </p>
+                </section>
+                                <section>
+                    <h2>新製品</h2>
+                    <p>
+                        ディープラーニングを使ったおにぎり製造システムを開発しました。
+                    </p>
+                </section>
+            </main>
+ 
+            <aside>
+                <ul>
+                    <li>サイドメニュー項目１</li>
+                    <li>サイドメニュー項目２</li>
+                    <li>サイドメニュー項目３</li>
+                </ul>
+            </aside>
+ 
+            <footer>
+                <small>Copyright © 2017 Nanka Company All Rights Reserved.</small>
+            </footer>
+        </div>
+    </body>
+</html>
+ 
